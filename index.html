@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./main.js"></script>
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <title>Shortly</title>
+</head>
+<body>
+    <header>
+        <div class="container text-center pt-4 px-3">
+            <nav class="navbar navbar-expand-md">
+                <a href="#" class="navbar-brand"><img src="./images/logo.svg" alt="logo"></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon navbar-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Features</a>
+                        <a href="#" class="nav-link">Pricing</a>
+                        <a href="#" class="nav-link">Resources</a>
+                    </div>
+                    <hr>
+                    <div class="nav-buttons ms-auto">
+                        <button class="btn login">Login</button>
+                        <button class="btn signup">Sign Up</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container call-to-action-area px-3 text-center">
+            <img src="./images/illustration-working.svg" alt="working" class="working">
+            <div class="call-to-action">
+                <h1>More than just shorter links</h1>
+                <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                <button class="btn mt-2">Get Started</button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid active-area">
+        <div class="input-background">
+            <form action="/" method="post" class="form-floating needs-validation">
+                <input type="text" class="form-control" id="urlInput" placeholder="Shorten a link here..." required>
+                <label for="apiKeyInput">Shorten a link here...</label>
+                <button class="btn shorten">Shorten It!</button>
+                <div class="invalid-feedback">Please enter a valid url</div>
+            </form>
+        </div>
+    </div>
+    <div class="statistics text-center px-3">
+        <div class="generated-links"></div>
+        <h2 class="mb-3">Advanced Statistics</h2>
+        <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        <div class="card-area">
+            <div class="cyan-bar"></div>
+            <div class="grid-card brand-recognition">
+                <div class="circle-image brand"></div>
+                <h2>Brand Recognition</h2>
+                <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+            </div>
+            <div class="grid-card detailed-records">
+                <div class="circle-image detailed"></div>
+                <h2>Detailed Records</h2>
+                <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+            </div>
+            <div class="grid-card fully-customizable">
+                <div class="circle-image fully"></div>
+                <h2>Fully Customizable</h2>
+                <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+            </div>
+        </div>
+    </div>
+    <div class="boost text-center">
+        <h2>Boost your links today</h2>
+        <button class="btn mt-3">Get Started</button>
+    </div>
+    <footer>
+        <div class="container px-5 footer">
+            <img src="./images/logo.svg" alt="logo" class="footer-logo">
+            <div class="features">
+                <ul>
+                    <li class="footer-heading">Features</li>
+                    <li><a href="#">Link Shortening</a></li>
+                    <li><a href="#">Branded Links</a></li>
+                    <li><a href="#">Analytics</a></li>
+                </ul>
+            </div>
+            <div class="resources">
+                <ul>
+                    <li class="footer-heading">Resources</li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <ul>
+                    <li class="footer-heading">Company</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="bi-facebook"></i></a>
+                <a href="#"><i class="bi-pinterest"></i></a>
+                <a href="#"><i class="bi-linkedin"></i></a>
+                <a href="#"><i class="bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
