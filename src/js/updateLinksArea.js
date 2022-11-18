@@ -13,7 +13,14 @@ export default function updateLinksArea(longUrl, shortUrl) {
     const currentUrl = new UrlInfo(longUrl, shortUrl);
     urls.push(currentUrl);
 
-    const linksArea = document.querySelector(".generated-links");
+    const statisticsArea = document.querySelector(".statistics");
+
+    let linksArea = document.querySelector(".generated-links");
+    if (linksArea === null) {
+        linksArea = document.createElement("div");
+        linksArea.classList.add("generated-links");
+    }
+
     linksArea.innerHTML = "";
 
     for (let i = 0; i < urls.length; i++) {
@@ -56,6 +63,7 @@ export default function updateLinksArea(longUrl, shortUrl) {
 
         linksArea.appendChild(linkCard);
     }
+    statisticsArea.prepend(linksArea);
     resetLinkInput();
 }
 
